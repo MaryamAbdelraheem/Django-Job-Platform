@@ -13,3 +13,5 @@ job :
     -job_nature [full_time, part_time, remote,  freelance ]
     -experince
     -category
+
+     
