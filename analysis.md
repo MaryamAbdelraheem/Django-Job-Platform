@@ -1,7 +1,9 @@
 job :
-    -title
-    -location
-    -creation_date
+    -title --
+    -location --
+    -creation_date --
+
+company:
     -company_name
     -company_logo
     -company_subtitle
@@ -12,6 +14,8 @@ job :
     -vacancy
     -job_nature [full_time, part_time, remote,  freelance ]
     -experince
-    -category
 
-     
+category:
+    -
+
+      
