@@ -13,7 +13,7 @@ company:
     -company_subtitle
     -company_website
     -company_email
-    -experince
+    -experince 
 
 category:
     -
