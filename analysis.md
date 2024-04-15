@@ -1,7 +1,7 @@
 job :
-    -title --
-    -location --
-    -creation_date --
+    -title 
+    -location 
+    -creation_date 
     -salary_range
     -description
     -vacancy
@@ -13,9 +13,8 @@ company:
     -company_subtitle
     -company_website
     -company_email
-    -experince 
-
 category:
-    -
+    -name
+    -logo
 
       
