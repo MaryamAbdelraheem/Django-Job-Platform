@@ -1,5 +1,5 @@
 job :
-    -title 
+    -title  
     -location 
     -creation_date 
     -salary_range
