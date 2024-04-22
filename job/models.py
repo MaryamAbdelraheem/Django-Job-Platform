@@ -1,6 +1,7 @@
 from django.db import models
 from django_countries.fields import CountryField
 from django.utils import timezone
+from django.utils.text import slugify
 
 #tuples of tuples ; one stored at databse & one appeare to the user
 JOB_TYPE = (
@@ -23,8 +24,14 @@ class Job(models.Model):
     job_type = models.CharField(choices=JOB_TYPE, max_length=10)
     experince = models.IntegerField()
     category = models.ForeignKey('Category', related_name='job_category', on_delete=models.SET_NULL, null=True, blank=True )
+    slug = models.SlugField(null=True,blank=True)
+
     def __str__(self):
         return self.title 
+
+    def save(self, *args, **kwargs):
+       self.slug = slugify(self.title) 
+       super(Job, self).save(*args, **kwargs) # Call the real save() method
 
 class Company(models.Model):
     name = models.CharField(max_length=50)
