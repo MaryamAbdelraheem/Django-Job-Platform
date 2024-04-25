@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #other apps
     'django_countries',
+    'django.contrib.humanize',
     #my apps
     'job',
 ]
